@@ -1,4 +1,3 @@
-<html>
     <head>
       Practice Assignment: Creating Dashboards
         <!-- Metadata goes here -->
@@ -6,6 +5,6 @@
     <body>
         <!-- Content goes here -->
     </body>
-</html>
+
 
 
