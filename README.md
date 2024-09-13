@@ -35,6 +35,8 @@
   - update_input_container(selected_statistics): Enables or disables the year dropdown based on the selected statistics type.
   - update_output_container(selected_statistics, input_year): Updates the output container with the appropriate charts based on the selected statistics type and year.
 
-* dash_IBM_DV.py - The app is designed to be modular, with clear separation of concerns between data processing and visualization.
+* dash_IBM_DV.py - The app is designed to be modular, with clear separation of concerns between data processing and visualization. The app is built using declarative programming and event-driven programming, two common paradigms in web development, particularly for interactive dashboards like this one.
+  - Declarative Programming: Dash, a framework built on top of Flask, React.js, and Plotly, follows a declarative approach. In this app, you define the structure (layout) of the dashboard using high-level components (html.Div, dcc.Dropdown, etc.) and specify the desired outcome (charts) without directly manipulating the DOM or focusing on how to render elements step by step. For example, you describe the dropdown and chart elements, and Dash takes care of rendering them based on the given data.
+  - Event-Driven Programming: The app relies heavily on callbacks (functions that automatically trigger when user input changes), making it event-driven. For example, when a user selects a different year or statistic type, an event is triggered that updates the displayed charts. This dynamic behavior is central to Dash apps. Input-output binding in Dash (Input, Output) is an example of handling events in response to user actions.
 
 
