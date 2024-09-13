@@ -45,4 +45,26 @@
     + No Inheritance or Polymorphism: OOP concepts like inheritance, encapsulation, and polymorphism are not used here. The app is built using Dash components (which themselves might be object-oriented internally), but the app code is not structured in an OOP way.
     + Declarative Approach: Dash components (e.g., html.Div, dcc.Dropdown) are used declaratively, and their behavior is managed through functions, not through creating objects or class hierarchies.
 
+## Which kind of solution was used?
 
+This Dash app can be considered a full-stack solution for creating interactive web applications, albeit with certain limitations.
+
+### Full-Stack Aspects:
+#### Frontend:
+
+The app generates an interactive user interface using Dash components (based on HTML, CSS, and JavaScript under the hood). It includes interactive dropdowns, graphs, and layouts, making it a dynamic frontend.
+Plotly is used to create interactive data visualizations, which are rendered in the browser.
+
+#### Backend:
+
+Dash runs on Flask, a Python web framework, which acts as the server-side backend. It processes requests, handles routing, and manages the logic behind the app, such as updating the charts based on user input.
+Data processing and filtering are done using pandas on the backend before sending the results to the frontend for visualization.
+Data Layer:
+
+The app loads data from a CSV file using pandas, and manipulates it in-memory to generate various statistics and visualizations. If integrated with a database (e.g., SQL, NoSQL), it could handle persistent storage as part of the data layer.
+
+#### Limitations:
+* Backend Complexity: While this app has a backend (Flask), it is relatively lightweight and limited to serving the app and processing data. It lacks more complex backend features like user authentication, advanced APIs, or business logic found in larger full-stack applications.
+* Database: The current app reads from a static CSV file rather than from a dynamic database. For a true full-stack solution, you might want to integrate it with a database for more robust data handling.
+  
+In summary, the app can be considered a simple full-stack solution where both the frontend and backend are integrated within the same codebase, but it could be expanded to support more advanced full-stack features like databases or user management.
