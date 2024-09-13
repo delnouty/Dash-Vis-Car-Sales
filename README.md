@@ -14,13 +14,12 @@
   - Shows average automobile sales fluctuations over recession periods using a line chart.
   - Displays the average number of vehicles sold by vehicle type during recession periods using a bar chart.
 
-## Two solutions
+## First solution
 
 - dash_Cars_Sales.py - **object-oriented solution**. This application is designed using object-oriented principles, encapsulating the functionality within a class called **AutomobileDashboard**. This approach enhances modularity, making the code more organized and easier to maintain. By creating an instance of the **AutomobileDashboard class**, you can initialize the dashboard, set up the layout, define callbacks for interactivity, and run the server. This structure promotes reusability and scalability, allowing for easy updates and extensions in the future.
 
-
-
 ### Class: AutomobileDashboard
+
 * Attributes:
   - data: A DataFrame containing the automobile sales data loaded from a CSV file.
   - app: An instance of the Dash application.
@@ -35,6 +34,8 @@
   - callbacks(self): Defines the callback functions for interactivity. These functions update the dropdown menu and output container based on user selections.
   - update_input_container(selected_statistics): Enables or disables the year dropdown based on the selected statistics type.
   - update_output_container(selected_statistics, input_year): Updates the output container with the appropriate charts based on the selected statistics type and year.
+
+## Second solution
 
 * dash_IBM_DV.py - This solution itself primarily relies on functional programming concepts, where functions (such as the callback functions) take inputs and return outputs based on user interaction. The app is designed to be modular, with clear separation of concerns between data processing and visualization. The app is built using declarative programming and event-driven programming, two common paradigms in web development, particularly for interactive dashboards like this one.
   - Declarative Programming: Dash, a framework built on top of Flask, React.js, and Plotly, follows a declarative approach. In this app, you define the structure (layout) of the dashboard using high-level components (html.Div, dcc.Dropdown, etc.) and specify the desired outcome (charts) without directly manipulating the DOM or focusing on how to render elements step by step. For example, you describe the dropdown and chart elements, and Dash takes care of rendering them based on the given data.
