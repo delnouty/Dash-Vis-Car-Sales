@@ -7,6 +7,10 @@
 - Yearly Statistics: Displays yearly average automobile sales, total monthly sales, sales by vehicle type, and advertisement expenditure by vehicle type.
 - Recession Period Statistics: Shows average automobile sales fluctuations and sales by vehicle type during recession periods.
 - The dashboard is designed to be user-friendly, with dropdown menus for selecting report types and years, making it easy to navigate and analyze the data.
+
+## Two solutions
+
+- **object-oriented solution**. This application is designed using object-oriented principles, encapsulating the functionality within a class called **AutomobileDashboard**. This approach enhances modularity, making the code more organized and easier to maintain. By creating an instance of the **AutomobileDashboard class**, you can initialize the dashboard, set up the layout, define callbacks for interactivity, and run the server. This structure promotes reusability and scalability, allowing for easy updates and extensions in the future.
   
 
 
