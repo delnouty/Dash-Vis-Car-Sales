@@ -41,8 +41,8 @@
   - Declarative Programming: Dash, a framework built on top of Flask, React.js, and Plotly, follows a declarative approach. In this app, you define the structure (layout) of the dashboard using high-level components (html.Div, dcc.Dropdown, etc.) and specify the desired outcome (charts) without directly manipulating the DOM or focusing on how to render elements step by step. For example, you describe the dropdown and chart elements, and Dash takes care of rendering them based on the given data.
   - Event-Driven Programming: The app relies heavily on callbacks (functions that automatically trigger when user input changes), making it event-driven. For example, when a user selects a different year or statistic type, an event is triggered that updates the displayed charts. This dynamic behavior is central to Dash apps. Input-output binding in Dash (Input, Output) is an example of handling events in response to user actions.
   - Reasons It's Not Primarily Object-Oriented:
-    -- No Classes or Objects: The code does not define any custom classes or objects, which are the key components of OOP. Instead, it primarily uses functions to handle tasks (e.g., update_output_container).
-    -- No Inheritance or Polymorphism: OOP concepts like inheritance, encapsulation, and polymorphism are not used here. The app is built using Dash components (which themselves might be object-oriented internally), but the app code is not structured in an OOP way.
-    -- Declarative Approach: Dash components (e.g., html.Div, dcc.Dropdown) are used declaratively, and their behavior is managed through functions, not through creating objects or class hierarchies.
+    + No Classes or Objects: The code does not define any custom classes or objects, which are the key components of OOP. Instead, it primarily uses functions to handle tasks (e.g., update_output_container).
+    + No Inheritance or Polymorphism: OOP concepts like inheritance, encapsulation, and polymorphism are not used here. The app is built using Dash components (which themselves might be object-oriented internally), but the app code is not structured in an OOP way.
+    + Declarative Approach: Dash components (e.g., html.Div, dcc.Dropdown) are used declaratively, and their behavior is managed through functions, not through creating objects or class hierarchies.
 
 
