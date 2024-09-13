@@ -29,7 +29,7 @@
   - year_list: A list of years from 1980 to 2023 for the dropdown menu.
   - dropdown_options: A list of options for the statistics type dropdown menu.
 * Methods:
-  - __init__(self, data_url): The constructor method that initializes the class attributes, loads the data, and sets up the layout and callbacks.
+  - _ _init__(self, data_url): The constructor method that initializes the class attributes, loads the data, and sets up the layout and callbacks.
   - layout(self): Defines the layout of the dashboard, including the title, dropdown menus, and output container.
   - callbacks(self): Defines the callback functions for interactivity. These functions update the dropdown menu and output container based on user selections.
   - update_input_container(selected_statistics): Enables or disables the year dropdown based on the selected statistics type.
