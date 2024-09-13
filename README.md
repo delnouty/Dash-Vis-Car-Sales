@@ -2,11 +2,6 @@
 
 **This application is an Automobile Sales Dashboard built using Dash, a Python framework for building analytical web applications. It visualizes historical automobile sales data, providing insights through various interactive charts. Users can select between yearly statistics and recession period statistics to explore trends and patterns in automobile sales.**
 
-## Key features include:
-
-- Yearly Statistics: Displays yearly average automobile sales, total monthly sales, sales by vehicle type, and advertisement expenditure by vehicle type.
-- Recession Period Statistics: Shows average automobile sales fluctuations and sales by vehicle type during recession periods.
-- The dashboard is designed to be user-friendly, with dropdown menus for selecting report types and years, making it easy to navigate and analyze the data.
 
 ## Two solutions
 
@@ -24,29 +19,15 @@
   - Shows average automobile sales fluctuations over recession periods using a line chart.
   - Displays the average number of vehicles sold by vehicle type during recession periods using a bar chart.
 
-### Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/automobile-sales-dashboard.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd automobile-sales-dashboard
-    ```
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Usage
-
-To run the dashboard, execute the following command:
-```bash
-python app.py
-
-  
-
+### Class: AutomobileDashboard
+* Attributes:
+  - data: A DataFrame containing the automobile sales data loaded from a CSV file.
+  - app: An instance of the Dash application.
+  - color_map: A dictionary mapping vehicle types to specific colors for consistent chart coloring.
+  - month_order: A list defining the order of months for sorting and displaying monthly data.
+  - vehicle_type_order: A list defining the order of vehicle types for sorting and displaying vehicle type data.
+  - year_list: A list of years from 1980 to 2023 for the dropdown menu.
+  - dropdown_options: A list of options for the statistics type dropdown menu.
 
 
 
